@@ -1,0 +1,37 @@
+[
+    {
+        "id":"ad564da56z456a486a4894a9zdf",
+        "couleur": "rouge",
+        "taille": 42,
+        "marque": "nike",
+        "prix" : 145.85
+    },
+        {
+        "id":"daz8d4a89z4daz89d4az894ad",
+        "couleur": "rouge",
+        "taille": 42,
+        "marque": "nike",
+        "prix" : 145.85
+    },
+        {
+        "id":"da894d84az89489a4xz9a84x",
+        "couleur": "violet",
+        "taille": 42,
+        "marque": "nike",
+        "prix" : 75.85
+    },
+        {
+        "id":"x1az8489a4f894z89489az4x894az",
+        "couleur": "vert",
+        "taille": 42,
+        "marque": "nike",
+        "prix" : 145.85
+    },
+        {
+        "id":"xza6x4az89x4az984a9xazfdfa",
+        "couleur": "blue",
+        "taille": 42,
+        "marque": "addidas",
+        "prix" : 110.85
+    }
+]

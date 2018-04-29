@@ -1,0 +1,59 @@
+
+<h1>{{title}}</h1>
+
+<br>
+
+<!-- <a  routerLink="/achat"> Acheter </a>
+
+<p>{{contenu}}</p>-->
+<br>
+
+<div>
+
+  <p> Vous souhaitez afficher les paires d'une marque en particulier ? Sélectionnez la marque que vous souhaitez </p>
+
+  <button (click)="getSneakers('ADIDAS')">Adidas</button>
+  <button (click)="getSneakers('NIKE')">Nike</button>
+  <button (click)="getSneakers('PUMA')">Puma</button>
+  <button (click)="getSneakers('BALENCIAGA')">Balenciaga</button>
+
+  <br>
+  <br>
+
+<table border=2 type="tableAchat" style="text-align: center">
+   <tr>
+       <th>Product Id</th>
+       <th>Marque</th>
+       <th>Prix</th>
+       <th>Taille</th>
+       <th>Couleur</th>
+       <th>DISPONIBLE ?</th>
+       <th>Acheter ? </th>
+   </tr>
+   
+<tr *ngFor="let Sneakers of sneakers">
+  <td>{{ Sneakers.id }}</td>
+       <td>{{ Sneakers.marque }}</td>
+       <td>{{ Sneakers.prix }}</td>
+       <td>{{ Sneakers.taille }}</td>
+       <td>{{ Sneakers.couleur }}</td>
+       <td>{{ Sneakers.etat }}</td>
+       <div *ngIf="Sneakers.etat"><button>Acheter</button></div>
+       <!--<td><button (click)="getSneakers(Sneakers.marque)">ACHETER</button></td>-->
+	<!-- <img src="./basket/{{ basket.image }}"> -->
+</tr>
+
+
+
+</table>
+
+
+  <br>
+
+  <button (click)="getAllSneakers()">Afficher toutes les chaussures disponibles</button>
+
+
+</div>
+
+
+<p>{{contenu2}}<a routerLink="/vente"> Vendre votre paire </a></p>
